@@ -39,4 +39,27 @@ Es una herramienta que te ayuda a realizar un seguimiento de los cambios en los 
 2. Seguir los pasos de instalación recomendados para tu S.O. 
 3. Verificar la correcta instalacion con **`git --version`**
 
+### Configuracion basicas 
+
+<p align="center">
+  <table>
+    <tr>
+      <th>Comando</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td><code>git config --global user.name "Tu Nombre"</code></td>
+      <td>Configura GIT con tu nombre</td>
+    </tr>
+    <tr>
+      <td><code>git config --global user.email "tu@correo.com"</code></td>
+      <td>Configura GIT con tu correo</td>
+    </tr>
+    <tr>
+      <td><code>git config --global core.autocrlf true/code></td>
+      <td>anejar automáticamente los finales de línea en archivos de texto</td>
+    </tr>
+  </table>
+</p>
+
 
