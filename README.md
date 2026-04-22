@@ -33,5 +33,10 @@ Es una herramienta que te ayuda a realizar un seguimiento de los cambios en los 
 
 * **2025**: GitHub lidera el mercado con funciones basadas en IA y herramientas de colaboración avanzadas.
 
+### Como instalar GIT?
+
+1. Ir a <a href="https://gitscm.com/install/" target="_blank"> **https://gitscm.com/install/**
+2. Seguir los pasos de instalación recomendados para tu S.O. 
+3. Verificar la correcta instalacion con **`git --version`**
 
 
