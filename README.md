@@ -82,6 +82,59 @@ En Git, un estado se refiere al estado de tus archivos en el proceso de control 
 
 *`git restore <archivo>`**   borra físicamente el archivo modificado a su estado original
 
+#### Git Add
+
+Una vez que sepas qué archivos quieres incluir en tu commit, debes prepararlos usando el comando `git add`. Por ejemplo:
+
+<table align="center">
+  <tr>
+    <th>Comando</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td><code>git add &lt;file&gt;</code></td>
+    <td>Preparar un archivo específico</td>
+  </tr>
+  <tr>
+    <td><code>git add .</code></td>
+    <td>Preparar todos los archivos modificados</td>
+  </tr>
+</table>
+
+**Tip :** Usa `git restore staged <file>` para quitar de stage.
+
+#### Git Commit
+
+Después de preparar los archivos, puedes crear una confirmación usando el comando `git commit`. Por ejemplo:
+
+<p align="center">
+  <table>
+    <tr>
+      <th>Comando</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td><code>git commit</code></td>
+      <td>Agrega el mensaje de confirmación en tu IDE.</td>
+    </tr>
+    <tr>
+      <td><code>git commit -m "Your commit message"</code></td>
+      <td>Agregar mensaje de confirmación directamente</td>
+    </tr>
+    <tr>
+      <td><code>git commit --amend</code></td>
+      <td>Modificar el último mensaje de confirmación o incluir nuevos cambios preparados.</td>
+    </tr>
+  </table>
+</p>
+
+Es importante tener en cuenta que estos cambios se guardarán en su repositorio local. A partir de ahora, para deshacerlos, deberá revertirlos creando una nueva confirmación en el historial de cambios del repositorio.
+
+<p align="center">
+    <img src="assets/Git_workflow.png"
+    alt="Bonfire">
+</p>
+
 #### ¿Cómo puedo dejar de rastrear un archivo?
 
 Crea un archivo `.gitignore` en tu proyecto y agrega los siguientes patrones para indicarle a Git qué archivos o carpetas debe ignorar:
