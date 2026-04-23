@@ -105,6 +105,19 @@ Una vez que sepas qué archivos quieres incluir en tu commit, debes prepararlos 
 
 #### Git Commit
 
+Un commit es una snapshot de los cambios de tu proyecto en un momento específico. Funciona como un punto de guardado, lo que te permite realizar un seguimiento de los cambios y revertirlos si es necesario.
+
+Cada commit contiene un identificador único, una descripción de los cambios realizados y detalles adicionales como el autor y la hora en que se realizó el commit.
+
+<p align="center"><strong>En palabras cortas es un checkpoint en los videjuegos.</strong></p>
+ 
+<p align="center">
+    <img src="assets/bonfire.gif"
+    alt="Bonfire">
+</p>
+
+### How do I make a commit?
+
 Después de preparar los archivos, puedes crear una confirmación usando el comando `git commit`. Por ejemplo:
 
 <p align="center">
