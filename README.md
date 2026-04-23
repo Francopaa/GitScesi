@@ -208,6 +208,11 @@ Crea un archivo `.gitignore` en tu proyecto y agrega los siguientes patrones par
 
 #### GitHub
 
+<p align="center">
+  <img src="assets/Github-logo.png"
+  alt="GitHub Logo">
+</p>
+
 ##### Que es GitHub?
 
 GitHub es una plataforma web para el control de versiones y la colaboración, basada en Git. Permite a los desarrolladores alojar, gestionar y compartir sus repositorios de código, a la vez que proporciona herramientas para la colaboración, el seguimiento de incidencias y la gestión de proyectos.
@@ -346,3 +351,54 @@ Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
    ```
 
 ---
+
+#### Caso 2: Conectar un proyecto local a un repositorio existente
+
+1. **Abre tu terminal**  
+   Ubícate dentro de la carpeta de tu proyecto local:
+
+   ```bash
+   cd ruta/de/tu/proyecto
+   ```
+
+2. **Inicializa Git (si aún no está inicializado)**
+
+   ```bash
+   git init
+   ```
+
+3. **Agrega los archivos al repositorio local**
+
+   ```bash
+   git add .
+   ```
+
+4. **Realiza el primer commit**
+
+   ```bash
+   git commit -m "Primer commit"
+   ```
+
+5. **Conecta tu proyecto con el repositorio remoto existente**
+
+   ```bash
+   git remote add origin <repository-url>
+   ```
+
+6. **Verifica la rama principal**  
+   Si deseas usar `main`:
+
+   ```bash
+   git branch -M main
+   ```
+
+7. **Envía el proyecto a GitHub**
+
+   ```bash
+   git push -u origin main
+   ```
+
+8. **Verifica en GitHub**  
+   Entra a tu repositorio y confirma que los archivos se hayan subido correctamente.
+
+
