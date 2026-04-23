@@ -62,4 +62,18 @@ Es una herramienta que te ayuda a realizar un seguimiento de los cambios en los 
   </table>
 </p>
 
+## Clase 2
 
+### STATES Y COMMITS
+En Git, un estado se refiere al estado de tus archivos en el proceso de control de versiones.
+
+
+
+* **Modified** : El archivo ha sido creado, modificado o eliminado, pero aún no se ha preparado para su confirmación.
+* **Staged** : El archivo está marcado para ser incluido en la próxima confirmación.
+* **Commited** : Los cambios se guardan en el repositorio local.
+
+<p align="center">
+    <img src="assets/Git_states.png"
+    alt="Git States">
+</p>
