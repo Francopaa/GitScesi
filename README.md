@@ -241,3 +241,77 @@ Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
    ```bash
    git clone <repository-url>
 
+#### Conexión por SSH con GitHub
+
+1. **Abre tu terminal**  
+   En tu sistema operativo, abre la terminal o consola de comandos.
+
+2. **Verifica si tienes una clave SSH existente**  
+   Usa el siguiente comando para comprobar si ya tienes claves SSH generadas:
+
+   ```bash
+   ls ~/.ssh
+   ```
+
+   Si ves archivos como `id_rsa` e `id_rsa.pub` o `id_ed25519` e `id_ed25519.pub`, ya tienes una clave SSH.
+
+3. **Genera una nueva clave SSH (si no tienes una)**  
+   Ejecuta el siguiente comando reemplazando `tu_correo@example.com` por tu correo de GitHub:
+
+   ```bash
+   ssh-keygen -t ed25519 -C "tu_correo@example.com"
+   ```
+
+   Si tu sistema no soporta `ed25519`, puedes usar:
+
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "tu_correo@example.com"
+   ```
+
+4. **Inicia el agente SSH**  
+   Ejecuta el siguiente comando para iniciar el agente SSH:
+
+   ```bash
+   eval "$(ssh-agent -s)"
+   ```
+
+5. **Agrega tu clave SSH al agente**  
+   Usa el siguiente comando para añadir tu clave privada:
+
+   ```bash
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+   O si usaste RSA:
+
+   ```bash
+   ssh-add ~/.ssh/id_rsa
+   ```
+
+6. **Copia la clave pública**  
+   Muestra el contenido de tu clave pública con:
+
+   ```bash
+   cat ~/.ssh/id_ed25519.pub
+   ```
+
+   Copia todo el contenido que aparece en pantalla.
+
+7. **Agrega la clave SSH a GitHub**  
+   - Ve a GitHub e inicia sesión.
+   - Entra en **Settings**.
+   - Selecciona **SSH and GPG keys**.
+   - Haz clic en **New SSH key**.
+   - Asigna un título a tu clave.
+   - Pega la clave pública copiada anteriormente.
+   - Haz clic en **Add SSH key**.
+
+8. **Prueba la conexión SSH**  
+   Ejecuta el siguiente comando para verificar que todo funciona correctamente:
+
+   ```bash
+   ssh -T git@github.com
+   ```
+
+   Si todo está bien configurado, verás un mensaje de bienvenida de GitHub.
+
