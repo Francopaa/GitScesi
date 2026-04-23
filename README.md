@@ -161,3 +161,29 @@ Crea un archivo `.gitignore` en tu proyecto y agrega los siguientes patrones par
     </tr>
   </tbody>
 </table>
+#### Buenas practicas 
+##### ¿Para qué sirven las buenas prácticas?
+ 
+* Es un estándar seguido por la mayoría de los equipos de desarrollo.
+* Resolver conflictos o problemas durante el desarrollo se vuelve más sencillo.
+* El historial de commits es más legible.
+##### ¿Con qué frecuencia hacer commits?
+ 
+* Es mejor hacer commits pequeños, agrupando mejoras o acciones puntuales, que hacer un commit grande con todo lo que se quiere hacer.
+* Hacer commits frecuentes no significa hacerlos sin propósito.
+##### Cómo escribir buenos commits
+ 
+* Usa verbos como: Add (Añadir), Change (Cambiar), Fix (Corregir) o Remove (Eliminar).
+* No uses "." ni "..."; en el peor caso, usa ",".
+* Usa un máximo de 50 caracteres para tu commit.
+* Añade todo el contexto necesario.
+* Usa prefijos para hacerlos más semánticos.
+##### Prefijos para commits
+ 
+* **feat**: para una nueva funcionalidad para el usuario.
+* **fix**: para un bug que afecta al usuario.
+* **perf**: para cambios que mejoran el rendimiento del sitio.
+* **build**: para cambios en el sistema de construcción, despliegue o tareas de instalación.
+* **ci**: para cambios en la integración continua.
+* **docs**: para cambios en la documentación.
+* **refactor**: para refactorización de código, como renombrar variables o funciones.
