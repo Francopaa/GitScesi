@@ -203,3 +203,41 @@ Crea un archivo `.gitignore` en tu proyecto y agrega los siguientes patrones par
 * **ci**: para cambios en la integración continua.
 * **docs**: para cambios en la documentación.
 * **refactor**: para refactorización de código, como renombrar variables o funciones.
+
+### Cuarta clase
+
+#### GitHub
+
+##### Que es GitHub?
+
+GitHub es una plataforma web para el control de versiones y la colaboración, basada en Git. Permite a los desarrolladores alojar, gestionar y compartir sus repositorios de código, a la vez que proporciona herramientas para la colaboración, el seguimiento de incidencias y la gestión de proyectos.
+
+#### Como crear un repositorio en GitHub?
+
+Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
+
+1. **Inicia sesión en GitHub**  
+   Ve a [GitHub](https://github.com/) e inicia sesión con tus credenciales.
+
+2. **Navega a la página de Nuevo Repositorio**  
+   Haz clic en el ícono `+` en la esquina superior derecha de la página y selecciona **New repository**.
+
+3. **Completa los detalles del repositorio**  
+   - **Repository Name**: Ingresa un nombre único para tu repositorio.
+   - **Description** (opcional): Agrega una breve descripción de tu proyecto.
+   - **Visibility**: Elige entre **Public** (visible para todos) o **Private** (solo accesible para ti y tus colaboradores).
+
+4. **Inicializa el repositorio**  
+   - Opcionalmente, marca la casilla para **Add a README file**. Este archivo se usa comúnmente para describir tu proyecto.
+   - También puedes agregar un archivo `.gitignore` para especificar qué archivos Git debe ignorar.
+   - Opcionalmente, elige una licencia para tu proyecto.
+
+5. **Crea el repositorio**  
+   Haz clic en el botón **Create repository** para finalizar.
+
+6. **Clona el repositorio**  
+   Después de crear el repositorio, puedes clonarlo en tu máquina local usando el comando:
+
+   ```bash
+   git clone <repository-url>
+
