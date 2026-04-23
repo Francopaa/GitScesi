@@ -315,3 +315,34 @@ Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
 
    Si todo está bien configurado, verás un mensaje de bienvenida de GitHub.
 
+#### GitHub: Repositorio Nuevo o Existente
+
+##### Caso 1: Crear un repositorio nuevo en GitHub
+
+1. **Inicia sesión en GitHub**  
+   Ve a https://github.com/ e inicia sesión con tus credenciales.
+
+2. **Navega a la página de Nuevo Repositorio**  
+   Haz clic en el ícono `+` en la esquina superior derecha y selecciona **New repository**.
+
+3. **Completa los detalles del repositorio**  
+   - **Repository Name**: Ingresa un nombre único.
+   - **Description** (opcional): Agrega una breve descripción.
+   - **Visibility**: Elige entre **Public** o **Private**.
+
+4. **Inicializa el repositorio**  
+   - Opcionalmente marca **Add a README file**.
+   - Puedes agregar un archivo `.gitignore`.
+   - También puedes elegir una licencia.
+
+5. **Crea el repositorio**  
+   Haz clic en **Create repository**.
+
+6. **Clona el repositorio**  
+   Usa el siguiente comando:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+---
