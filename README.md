@@ -440,3 +440,22 @@ git reset --hard <id-del-commit>
 ```
 
 ⚠️ Este comando elimina cambios posteriores.
+
+#### Pull
+
+1. **Actualizar tu repositorio local con cambios remotos**
+
+```bash
+git pull origin main
+```
+
+2. **¿Qué hace este comando?**
+
+- Descarga los cambios del repositorio remoto
+- Los fusiona automáticamente con tu rama actual
+
+3. **Si usas otra rama**
+
+```bash
+git pull origin develop
+```
