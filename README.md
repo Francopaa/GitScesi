@@ -116,7 +116,7 @@ Cada commit contiene un identificador único, una descripción de los cambios re
     alt="Bonfire">
 </p>
 
-### How do I make a commit?
+### Como hacer un commit?
 
 Después de preparar los archivos, puedes crear una confirmación usando el comando `git commit`. Por ejemplo:
 
@@ -131,7 +131,7 @@ Después de preparar los archivos, puedes crear una confirmación usando el coma
       <td>Agrega el mensaje de confirmación en tu IDE.</td>
     </tr>
     <tr>
-      <td><code>git commit -m "Your commit message"</code></td>
+      <td><code>git commit -m "El mensaje de tu commit"</code></td>
       <td>Agregar mensaje de confirmación directamente</td>
     </tr>
     <tr>
@@ -401,4 +401,42 @@ Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
 8. **Verifica en GitHub**  
    Entra a tu repositorio y confirma que los archivos se hayan subido correctamente.
 
+### Quinta clase
 
+#### ¿Cómo ir y volver de un commit?
+
+1. **Ver el historial de commits**
+
+```bash
+git log --oneline
+```
+
+Esto mostrará una lista resumida de commits con su identificador.
+
+2. **Moverse a un commit anterior**
+
+```bash
+git checkout <id-del-commit>
+```
+
+Esto te llevará temporalmente a ese commit.
+
+3. **Volver a la rama principal**
+
+```bash
+git checkout main
+```
+
+O si usas `master`:
+
+```bash
+git checkout master
+```
+
+4. **Regresar definitivamente a un commit**
+
+```bash
+git reset --hard <id-del-commit>
+```
+
+⚠️ Este comando elimina cambios posteriores.
