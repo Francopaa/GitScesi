@@ -491,3 +491,42 @@ git checkout -b nueva-rama
 ```
 
 Esto crea una nueva rama desde ese punto.
+
+#### Configurar multiples SSH
+
+1. **Generar una clave SSH para cada cuenta**
+
+```bash
+ssh-keygen -t ed25519 -C "personal@email.com"
+```
+
+```bash
+ssh-keygen -t ed25519 -C "trabajo@email.com"
+```
+
+2. **Guardar con nombres diferentes**
+
+Ejemplo:
+
+- id_ed25519_personal
+- id_ed25519_trabajo
+
+3. **Editar el archivo de configuración SSH**
+
+```bash
+~/.ssh/config
+```
+
+4. **Agregar la configuración**
+
+```bash
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
+
+Host github-trabajo
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_trabajo
+```
