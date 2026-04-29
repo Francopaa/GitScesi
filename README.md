@@ -568,3 +568,33 @@ git branch -D <nombre-rama>
 
 ---
 
+### Git Checkout enfocado en ramas
+
+#### Cambiar de rama
+
+```bash
+git checkout <rama>
+```
+
+⚠️ No debes tener archivos modified, untracked o staged.
+
+#### Crear una rama y moverse a ella
+
+```bash
+git checkout -b <rama>
+```
+
+---
+
+#### Git Checkout vs Git Switch
+
+`git checkout` sirve para:
+- ramas
+- commits
+- archivos
+
+`git switch` sirve solo para ramas y evita errores como Detached HEAD.
+
+Es el comando moderno desde Git 2.23.
+
+---
