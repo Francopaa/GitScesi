@@ -532,3 +532,14 @@ Host github-trabajo
 ```
 
 ### Clase 5
+
+## ¿Qué son las ramas?
+
+Las ramas son una bifurcación del estado del código que crea un nuevo camino para la evolución del proyecto, permitiendo trabajar en paralelo sin afectar la rama principal.
+
+Facilitan:
+- nuevas funcionalidades
+- corrección de errores
+- pruebas sin afectar producción
+
+---
