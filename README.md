@@ -598,3 +598,91 @@ git checkout -b <rama>
 Es el comando moderno desde Git 2.23.
 
 ---
+
+### Gitflow Básico
+
+Gitflow es un flujo de trabajo que permite organizar mejor las ramas en un proyecto.
+
+Ayuda a:
+- trabajo en equipo
+- control de versiones
+- producción ordenada
+- mantenimiento sencillo
+
+---
+
+#### main
+
+Es la rama principal.
+
+Contiene el código en producción.
+
+```text
+main = producción
+```
+
+---
+
+#### develop
+
+Es la rama de preproducción.
+
+Aquí se integran cambios antes de pasar a producción.
+
+```text
+develop = preproducción
+```
+
+---
+
+#### Feature
+
+Para nuevas funcionalidades.
+
+- nace de develop
+- muere en develop
+
+Ejemplos:
+
+```text
+feature/sum-function
+feature/add-search-bar
+feature/new-form-user
+```
+
+---
+
+#### Release
+
+Para preparar nuevas versiones.
+
+- nace de develop
+- se fusiona en main y develop
+
+Ejemplos:
+
+```text
+release/v1.0.0
+release/v2.1.0-beta
+```
+
+---
+
+#### Hotfix
+
+Para errores urgentes en producción.
+
+Siempre nace desde main.
+
+- nace de main
+- se fusiona en main y develop
+
+Ejemplos:
+
+```text
+hotfix/login-authentication-error
+hotfix/security-patch-v1.0.2
+hotfix/api-timeout-emergency
+```
+
+---
