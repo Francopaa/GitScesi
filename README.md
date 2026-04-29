@@ -543,3 +543,28 @@ Facilitan:
 - pruebas sin afectar producción
 
 ---
+
+#### Git Branch
+
+##### Listar ramas disponibles
+
+```bash
+git branch
+```
+
+Muestra todas las ramas existentes y la posición actual del HEAD.
+
+### Crear una nueva rama
+
+```bash
+git branch <nombre-rama>
+```
+
+### Eliminar una rama
+
+```bash
+git branch -D <nombre-rama>
+```
+
+---
+
