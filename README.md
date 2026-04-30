@@ -542,6 +542,11 @@ Facilitan:
 - corrección de errores
 - pruebas sin afectar producción
 
+<p align="center">
+    <img src="assets/ramas.png"
+    alt="Repo Sync">
+</p>
+
 ---
 
 ### Git Branch
@@ -608,6 +613,11 @@ Ayuda a:
 - control de versiones
 - producción ordenada
 - mantenimiento sencillo
+
+<p align="center">
+    <img src="assets/gitflow.png"
+    alt="Repo Sync">
+</p>
 
 ---
 
