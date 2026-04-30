@@ -204,7 +204,7 @@ Crea un archivo `.gitignore` en tu proyecto y agrega los siguientes patrones par
 * **docs**: para cambios en la documentación.
 * **refactor**: para refactorización de código, como renombrar variables o funciones.
 
-### Cuarta clase
+## Clase 3
 
 #### GitHub
 
@@ -401,9 +401,9 @@ Crear un repositorio en GitHub es un proceso sencillo. Sigue estos pasos:
 8. **Verifica en GitHub**  
    Entra a tu repositorio y confirma que los archivos se hayan subido correctamente.
 
-### Quinta clase
+## Clase 5
 
-#### ¿Cómo ir y volver de un commit?
+### ¿Cómo ir y volver de un commit?
 
 1. **Ver el historial de commits**
 
@@ -441,7 +441,7 @@ git reset --hard <id-del-commit>
 
 ⚠️ Este comando elimina cambios posteriores.
 
-#### Pull
+### Pull
 
 1. **Actualizar tu repositorio local con cambios remotos**
 
@@ -460,7 +460,7 @@ git pull origin main
 git pull origin develop
 ```
 
-#### "Detached HEAD"
+### "Detached HEAD"
 
 1. **¿Qué significa?**
 
@@ -492,7 +492,7 @@ git checkout -b nueva-rama
 
 Esto crea una nueva rama desde ese punto.
 
-#### Configurar multiples SSH
+### Configurar multiples SSH
 
 1. **Generar una clave SSH para cada cuenta**
 
@@ -531,9 +531,9 @@ Host github-trabajo
     IdentityFile ~/.ssh/id_ed25519_trabajo
 ```
 
-### Clase 5
+## Clase 4
 
-## ¿Qué son las ramas?
+### ¿Qué son las ramas?
 
 Las ramas son una bifurcación del estado del código que crea un nuevo camino para la evolución del proyecto, permitiendo trabajar en paralelo sin afectar la rama principal.
 
@@ -544,9 +544,9 @@ Facilitan:
 
 ---
 
-#### Git Branch
+### Git Branch
 
-##### Listar ramas disponibles
+#### Listar ramas disponibles
 
 ```bash
 git branch
@@ -578,7 +578,7 @@ git checkout <rama>
 
 ⚠️ No debes tener archivos modified, untracked o staged.
 
-#### Crear una rama y moverse a ella
+### Crear una rama y moverse a ella
 
 ```bash
 git checkout -b <rama>
@@ -586,7 +586,7 @@ git checkout -b <rama>
 
 ---
 
-#### Git Checkout vs Git Switch
+### Git Checkout vs Git Switch
 
 `git checkout` sirve para:
 - ramas
@@ -599,7 +599,7 @@ Es el comando moderno desde Git 2.23.
 
 ---
 
-### Gitflow Básico
+## Gitflow Básico
 
 Gitflow es un flujo de trabajo que permite organizar mejor las ramas en un proyecto.
 
@@ -611,7 +611,7 @@ Ayuda a:
 
 ---
 
-#### main
+### main
 
 Es la rama principal.
 
@@ -623,7 +623,7 @@ main = producción
 
 ---
 
-#### develop
+### develop
 
 Es la rama de preproducción.
 
@@ -635,7 +635,7 @@ develop = preproducción
 
 ---
 
-#### Feature
+### Feature
 
 Para nuevas funcionalidades.
 
@@ -652,7 +652,7 @@ feature/new-form-user
 
 ---
 
-#### Release
+### Release
 
 Para preparar nuevas versiones.
 
@@ -668,7 +668,7 @@ release/v2.1.0-beta
 
 ---
 
-#### Hotfix
+### Hotfix
 
 Para errores urgentes en producción.
 
