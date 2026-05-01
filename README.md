@@ -781,3 +781,15 @@ git commit
 git branch -D rama
 git push origin develop
 ```
+
+## Clase 7
+
+### Pull Requests (PRs)
+
+### ¿Qué son los Pull Request?
+
+Los Pull Requests (PRs) son una forma profesional de trabajar con Git y
+GitHub. Permiten proponer cambios al repositorio para que sean revisados
+antes de integrarse al código principal.
+
+---
