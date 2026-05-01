@@ -794,7 +794,7 @@ antes de integrarse al código principal.
 
 ---
 
-### ¿Cómo crear un PR?
+#### ¿Cómo crear un PR?
 
 1.  Realiza cambios en tu rama.
 
@@ -810,3 +810,29 @@ antes de integrarse al código principal.
 4.  Espera revisión y aprobación.
 
 ---
+
+#### Flujo de trabajo (Con Pull Requests)
+
+``` bash
+git checkout develop
+git fetch
+git pull origin develop
+
+git checkout rama  # Usa -b si la creas
+git merge develop  # Solo si hubo cambios
+
+# Trabajas en tu rama
+
+git push origin rama  # Usa -u si es la primera vez
+
+git checkout develop
+git fetch
+git checkout rama
+git merge develop  # Antes de hacer PR si hubo cambios
+
+# Resolver conflictos si hay
+git add .
+git commit
+
+git push origin rama
+```
