@@ -710,4 +710,12 @@ manteniendo la trazabilidad incluso si luego borras la rama.
 
 ---
 
+### ¿Qué es git fetch?
+
+Es el comando que permite verificar si hubo cambios en la rama remota y
+sus ramas relacionadas. Te avisa si existen actualizaciones, pero no las
+descarga automáticamente a tu rama local.
+
+---
+
 
