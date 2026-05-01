@@ -836,3 +836,28 @@ git commit
 
 git push origin rama
 ```
+
+---
+
+#### ¿Por qué usar PRs?
+
+-   Añaden seguridad al evitar cambios directos sin revisión.
+-   Permiten revisar el código antes de integrarlo.
+-   Fomentan discusión y colaboración en equipo.
+-   Ayudan a detectar errores o código malicioso.
+
+---
+
+#### ¿Cómo proteger el repositorio?
+
+Se pueden configurar reglas en GitHub para: - Requerir revisiones antes
+de hacer merge. - Restringir quién puede hacer cambios directos. -
+Obligar el uso de PRs.
+
+---
+
+#### ¿Cómo colaborar sin ser invitado?
+
+Puedes usar el flujo de *fork*: 1. Haces un fork del repositorio. 2.
+Trabajas en tu copia. 3. Subes tus cambios. 4. Creas un PR hacia el
+repositorio original.
