@@ -718,4 +718,18 @@ descarga automáticamente a tu rama local.
 
 ---
 
+### ¿Qué es git pull?
+
+El comando `git pull` permite traer todos los cambios del repositorio
+remoto hacia tu rama local.
+
+Se recomienda usarlo con `origin` y el nombre de la rama para evitar
+errores:
+
+``` bash
+git pull origin rama
+```
+
+---
+
 
