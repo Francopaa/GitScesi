@@ -786,10 +786,27 @@ git push origin develop
 
 ### Pull Requests (PRs)
 
-### ¿Qué son los Pull Request?
+#### Qué son los Pull Request?
 
 Los Pull Requests (PRs) son una forma profesional de trabajar con Git y
 GitHub. Permiten proponer cambios al repositorio para que sean revisados
 antes de integrarse al código principal.
+
+---
+
+### ¿Cómo crear un PR?
+
+1.  Realiza cambios en tu rama.
+
+2.  Sube tu trabajo:
+
+    ``` bash
+    git push origin rama
+    ```
+
+3.  Ve a GitHub y crea el Pull Request desde tu rama hacia la rama base
+    (por ejemplo, develop o main).
+
+4.  Espera revisión y aprobación.
 
 ---
